@@ -16,7 +16,6 @@ public class Ex15 {
         int i = 1;
         int num2 = 0;
 
-
         for (;i < n;i++){
 
              num1 = num1 + num2;
