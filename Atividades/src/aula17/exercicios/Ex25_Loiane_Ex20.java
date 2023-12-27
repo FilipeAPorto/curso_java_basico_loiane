@@ -6,12 +6,13 @@ import java.util.Scanner;
 programa devera verificar se a média de idade da turma varia entre 0 e
 25,26 e 60 e maior que 60; e então, dizer se a turma é jovem, adulta
 ou idosa, conforme a média calculada.*/
-public class Ex25 {
+public class Ex25_Loiane_Ex20 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
-        int qtdPessoa,idade,media,total=0;
+        int qtdPessoa,idade;
+        double media,total=0;
 
         do {
             System.out.print("Insira a quantidade de pessoas da turma : ");
