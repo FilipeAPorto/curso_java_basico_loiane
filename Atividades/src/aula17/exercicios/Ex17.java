@@ -25,7 +25,6 @@ public class Ex17 {
 
             num1 = num1 * num2;
         }
-
         System.out.println("O fatorial do numero " + numInicial + " é " + num1);
     }
 }
