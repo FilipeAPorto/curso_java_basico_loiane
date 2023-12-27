@@ -13,16 +13,18 @@ public class Ex15 {
         int n = scan.nextInt();
 
         int num1 = 1;
-        int i = 1;
-        int num2 = 0;
+        int i = 3;
+        int num2 = 1;
+        int num3;
+        System.out.println(num1 +"\n" + num2);
 
         for (;i < n;i++){
 
-             num1 = num1 + num2;
+             num3 = num1 + num2;
+             num1 = num2;
+             num2 = num3;
 
-             num2 = num1 - num2 ;
-
-            System.out.print(num1 + " - ");
+            System.out.println(num3);
         }
         //System.out.println("Após "+n+" numeros o valor de Fibonacci ficou assim "+num1);
     }
