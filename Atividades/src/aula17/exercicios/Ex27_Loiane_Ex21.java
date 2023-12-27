@@ -5,12 +5,13 @@ import java.util.Scanner;
 /*Faça um programa que calcule o número médio de alunos por turma.
 Para isto, peça a quantidade de turmas e a quantidade de alunos para
 cada turma. As turmas não podem ter mais de 40 alunos.*/
-public class Ex27 {
+public class Ex27_Loiane_Ex21 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
-        int turma,aluno,total=0,media=0;
+        int turma,aluno;
+        double media,total=0;
 
         do {
             System.out.print("Insira a quantidade de turmas :");
@@ -33,7 +34,7 @@ public class Ex27 {
                     System.out.println("\n**ERRO - A quantidade de alunos inseridos é invalido**");
                 }
 
-            }while (aluno > 40);
+            }while (aluno <= 0 || aluno > 40);
 
             total += aluno;
         }
