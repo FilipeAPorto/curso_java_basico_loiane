@@ -6,7 +6,7 @@ import java.util.Scanner;
 colecionador em sua coleção de CDs e o valor médio gasto em cada
 um deles. O usuário deverá informar a quantidade de CDs e o valor
 para em cada um.*/
-public class Ex28 {
+public class Ex28_Loiane_Ex22 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
