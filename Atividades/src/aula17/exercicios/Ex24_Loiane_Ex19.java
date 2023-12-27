@@ -3,16 +3,17 @@ package aula17.exercicios;
 import java.util.Scanner;
 
 /*Faça um programa que calcule o mostre a média aritmética de N notas.*/
-public class Ex24 {
+public class Ex24_Loiane_Ex19 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
-        double qtdNotas,notas,media,total=0;
+        int qtdNotas;
+        double notas,media,total=0;
 
         do {
             System.out.println("Insira a quantidade de notas a ser calculada : ");
-            qtdNotas = scan.nextDouble();
+            qtdNotas = scan.nextInt();
 
             if (qtdNotas <= 1){
                 System.out.println("** ERRO - Valor invalido inserido **\n");
@@ -35,9 +36,8 @@ public class Ex24 {
 
             }while (notas < 0);
         }
-
         total = total/media;
 
-        System.out.println("A media entre as notas inseridas é de : "+total);
+        System.out.println("A media entre as "+ qtdNotas+ " notas inseridas é de : "+total);
     }
 }
