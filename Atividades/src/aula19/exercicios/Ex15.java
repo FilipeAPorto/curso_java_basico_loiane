@@ -9,7 +9,7 @@ public class Ex15 {
         double impar=0,par=0;
         int i=0;
 
-        int[] vetorA = new int[15];
+        int[] vetorA = new int[10];
         vetorA[0] = 40;
         vetorA[1] = 29;
         vetorA[2] = 95;
