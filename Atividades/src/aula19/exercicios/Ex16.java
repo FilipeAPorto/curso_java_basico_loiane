@@ -10,7 +10,7 @@ public class Ex16 {
 
         int itemA=0,itemB=0,itemC=0,media=0;
 
-        int[] vetorA = new int[15];
+        int[] vetorA = new int[10];
         vetorA[0] = 40;
         vetorA[1] = 29;
         vetorA[2] = 15;
