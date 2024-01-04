@@ -27,18 +27,18 @@ public class Ex1 {
             System.out.println();
         }
 
-        int k = Integer.MIN_VALUE,l=0,m=0;
+        int maiorNum = Integer.MIN_VALUE,linha=0,coluna=0;
 
          for(int i = 0;i < matrizM.length;i++){
             for(int j = 0;j < matrizM[i].length;j++){
 
-                if (matrizM[i][j] > k){
-                    k = matrizM[i][j];
-                    l = i;
-                    m = j;
+                if (matrizM[i][j] > maiorNum){
+                    maiorNum = matrizM[i][j];
+                    linha = i;
+                    coluna = j;
                 }
             }
         }
-        System.out.println("O maior valor da matriz é "+k+" e esta na posição "+(l+1)+" - "+(m+1));
+        System.out.println("O maior valor da matriz é "+maiorNum+" e esta na posição "+(linha+1)+" - "+(coluna+1));
     }
 }
