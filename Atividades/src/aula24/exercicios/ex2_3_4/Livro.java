@@ -1,6 +1,6 @@
 package aula24.exercicios.ex2_3_4;
 
-public class LivroMatriz {
+public class Livro {
 
     String nome;
     String autor;

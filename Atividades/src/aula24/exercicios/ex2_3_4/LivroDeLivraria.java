@@ -3,7 +3,7 @@ package aula24.exercicios.ex2_3_4;
 public class LivroDeLivraria {
     public static void main(String[] args) {
 
-        LivroMatriz livroDeLivraria = new LivroMatriz();
+        Livro livroDeLivraria = new Livro();
 
         livroDeLivraria.nome = "Assassinato no Expresso Oriente";
         livroDeLivraria.autor = "Agatha Christie";
