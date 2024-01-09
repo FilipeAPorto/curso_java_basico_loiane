@@ -6,7 +6,7 @@ public class Lampada {
     String fabricante;
     String tipo;
     int potencia;
-    String voltagem;
+    String tensao;
 
 
 }

@@ -8,12 +8,12 @@ public class LampadaLED {
         led.fabricante = "Ouro Lux";
         led.tipo = "LED";
         led.potencia = 60; // Watts
-        led.voltagem = "Bivolt"; // 127v e 220v
+        led.tensao = "Bivolt"; // 127v e 220v
 
         System.out.println(led.fabricante);
         System.out.println(led.tipo);
         System.out.println(led.potencia);
-        System.out.println(led.voltagem);
+        System.out.println(led.tensao);
 
 
 

@@ -8,13 +8,12 @@ public class LampadaFlorecente {
         led.fabricante = "Toschiba";
         led.tipo = "Fluorecente";
         led.potencia = 15; // Watts
-        led.voltagem = "127"; // 127v
+        led.tensao = "127"; // 127v
 
         System.out.println(led.fabricante);
         System.out.println(led.tipo);
         System.out.println(led.potencia);
-        System.out.println(led.voltagem);
-
+        System.out.println(led.tensao);
 
 
     }
