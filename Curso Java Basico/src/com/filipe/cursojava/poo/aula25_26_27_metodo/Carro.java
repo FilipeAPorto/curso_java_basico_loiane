@@ -23,12 +23,18 @@ public class Carro { //Classe
         return capCombustivel * consumoCombustivel;
     }
 
-    //Metodo com parâmetro
-    double calcularCombustivel(double km){
+    //Metodo com parâmetro 1
+    double calcularCombustivel1(double km){
 
         double qtdCombustivel = km/consumoCombustivel;
 
         return qtdCombustivel;
+    }
+
+    //Metodo com parâmetro 2
+    double calcularCombustivel2(double km){
+
+        return km/consumoCombustivel;
     }
 
 

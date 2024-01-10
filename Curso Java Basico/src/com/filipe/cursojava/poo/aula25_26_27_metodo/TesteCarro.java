@@ -28,8 +28,8 @@ public class TesteCarro {
 
         //Metodo com parâmetro
         System.out.println("*** Método com parâmetro ***");
-        double qtdCombustivel10 = van.calcularCombustivel(10);
-        double qtdCombustivel15 = van.calcularCombustivel(15);
+        double qtdCombustivel10 = van.calcularCombustivel1(10);
+        double qtdCombustivel15 = van.calcularCombustivel1(15);
 
         System.out.println("qtdCombustivel10 " + qtdCombustivel10);
         System.out.println("qtdCombustivel15 " + qtdCombustivel15);
