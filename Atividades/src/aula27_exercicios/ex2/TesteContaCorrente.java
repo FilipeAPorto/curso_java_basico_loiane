@@ -13,12 +13,18 @@ public class TesteContaCorrente {
         conta.limiteTotal = 100;
         conta.limiteUsado = conta.limiteTotal;
 
+        conta.nomeBanco = "BANCO SACO FURADO";
+        conta.nomeProprietario = "Antonio Braga Brito";
+        conta.numAgencia = 0552;
+        conta.numConta = 05321450;
 
         boolean sair = false;
         int operacao;
         double valorSaque, valorDeposito;
 
-        System.out.println("$$$ BEM VINDO AO BANCO SACO FURADO $$$\n");
+        System.out.println("$$$ BEM VINDO AO " + conta.nomeBanco + " $$$\n" + "Senhor(a) " + conta.nomeProprietario);
+        System.out.println();
+
 
         while (!sair) {
             do {

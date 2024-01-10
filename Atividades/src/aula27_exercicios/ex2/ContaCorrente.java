@@ -12,8 +12,7 @@ public class ContaCorrente {
 
     String nomeBanco, nomeProprietario;
 
-    double sacar(double valorSaque) {
-
+    void sacar(double valorSaque) {
         double valorFinal = saldo;
 
         if (saldo - valorSaque >= 0) {
@@ -33,7 +32,6 @@ public class ContaCorrente {
             System.out.println();
         }
 
-
         saldo = valorFinal;
 
         System.out.println("\nSeu saldo disponível em conta = R$" + saldo);
@@ -41,12 +39,9 @@ public class ContaCorrente {
             System.out.println("\nSaldo cheque especial = R$" + limiteUsado);
         }
         System.out.println();
-
-        return saldo;
     }
 
-    double depositar(double valorDeposito) {
-
+    void depositar(double valorDeposito) {
         if (chequeEspecial && valorDeposito <= (limiteTotal - limiteUsado)) {
 
             limiteUsado += valorDeposito;
@@ -66,8 +61,6 @@ public class ContaCorrente {
             System.out.println("\nSaldo cheque especial = R$" + limiteUsado);
         }
         System.out.println();
-
-        return saldo;
     }
 
     void consultarSaldo() {
@@ -78,7 +71,6 @@ public class ContaCorrente {
     }
 
     void verificarClienteChequeEspecial() {
-
         if (chequeEspecial == true) {
             System.out.println("Cheque especial Disponivel = R$" + limiteUsado);
         } else {
@@ -87,7 +79,6 @@ public class ContaCorrente {
     }
 
     void verificarUsoChequeEspecial() {
-
         if (chequeEspecial && limiteUsado == limiteTotal) {
             System.out.println("\nCliente não utilizou Cheque Especial\n");
         } else if (chequeEspecial) {
@@ -96,7 +87,5 @@ public class ContaCorrente {
         } else {
             verificarClienteChequeEspecial();
         }
-
-
     }
 }
