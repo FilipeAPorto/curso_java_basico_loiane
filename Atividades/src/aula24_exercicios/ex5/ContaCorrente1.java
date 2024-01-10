@@ -1,6 +1,6 @@
 package aula24_exercicios.ex5;
 
-public class ContaCorrente {
+public class ContaCorrente1 {
 
 
     String nomeBanco;

@@ -3,7 +3,7 @@ package aula24_exercicios.ex5;
 public class ContaSantander {
     public static void main(String[] args) {
 
-        ContaCorrente contaSantander = new ContaCorrente();
+        ContaCorrente1 contaSantander = new ContaCorrente1();
 
         contaSantander.nomeBanco = "Santander";
         contaSantander.numAgencia = 458;
