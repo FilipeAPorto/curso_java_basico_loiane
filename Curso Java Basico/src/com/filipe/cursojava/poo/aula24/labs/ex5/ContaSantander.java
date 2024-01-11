@@ -1,0 +1,17 @@
+package com.filipe.cursojava.poo.aula24.labs.ex5;
+
+public class ContaSantander {
+    public static void main(String[] args) {
+
+        ContaCorrente1 contaSantander = new ContaCorrente1();
+
+        contaSantander.nomeBanco = "Santander";
+        contaSantander.numAgencia = 458;
+        contaSantander.numConta = 9954121;
+        contaSantander.nomeProprietario = "Fabricio de Alcantra Cunha";
+        contaSantander.saldo = 968.62;
+        contaSantander.contaEspecial = true;
+        contaSantander.limite = 9000.00;
+
+    }
+}
