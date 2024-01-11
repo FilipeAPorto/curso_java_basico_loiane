@@ -11,6 +11,8 @@ public class TesteJogoDaVelha {
 
         System.out.println("*** INICIANDO JOGO DA VELHA ***");
 
+        System.out.println("Jogador 1 - X"); // impar
+        System.out.println("Jogador 2 - O"); //par
 
         while (!jogo.ganhou) {
 
@@ -32,7 +34,6 @@ public class TesteJogoDaVelha {
                 jogo.verificarColunaValida(jogo.coluna);
 
             } while (!jogo.colunaValida);
-
 
             jogo.verificarJogadaValida();
 
