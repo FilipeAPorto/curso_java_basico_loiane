@@ -21,10 +21,21 @@ public class TesteAluno {
         for (int i = 0; i < aluno.disciplinas.length; i++) {
             System.out.print("Insira o nome da " + (i + 1) + "ª Disciplina : ");
             aluno.disciplinas[i] = scan.next();
-
-            System.out.print("Insira a " + (i + 1) + "ª nota da matéria " + aluno.disciplinas[i] + " : ");
-            aluno.notas[i] = scan.nextDouble();
         }
-        aluno.verificarAprovacao();
+
+        for (int i = 0; i < aluno.notas.length; i++) {
+            System.out.println("Insira as notas da matéria " + aluno.disciplinas[i]);
+            for (int j = 0; j < aluno.notas[i].length; j++) {
+                do {
+                    System.out.print((j + 1) + "ª nota :");
+                    aluno.notas[i][j] = scan.nextDouble();
+
+                    if (aluno.notas[i][j] < 0 || aluno.notas[i][j] > 10) {
+                        System.out.println("*** ERRO - INSIRA UMA NOTA VÁLIDA ***");
+                    }
+                } while (aluno.notas[i][j] < 0 || aluno.notas[i][j] > 10);
+            }
+        }
+        aluno.mostarInfo();
     }
 }

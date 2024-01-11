@@ -7,12 +7,13 @@ Escreva um programa para testar essa classe, que pede as informações do aluno 
 notas e mostra se o aluno foi aprovado ou não.*/
 public class Aluno {
 
-    String nome, matricula;
-    String curso;
+    String nome, matricula, curso;
     String[] disciplinas = new String[3];
-    double[] notas = new double[3];
+    double[] media = new double[3];
+    double[][] notas = new double[3][4];
 
-    void verificarAprovacao() {
+
+    void mostarInfo() {
 
         System.out.println("\nNome do aluno(a) - " + nome);
 
@@ -20,18 +21,21 @@ public class Aluno {
 
         System.out.println("\nNome do curso - " + curso);
 
-        System.out.print("\nAs disciplinas são ");
-
-        for (int i = 0; i < disciplinas.length; i++) {
-            System.out.print(disciplinas[i] + " ");
-        }
         System.out.println();
 
+
+        for (int i = 0; i < notas.length; i++) {
+            for (int j = 0; j < notas[i].length; j++) {
+                media[i] += notas[i][j];
+            }
+            media[i] /= 4;
+        }
+
         for (int i = 0; i < disciplinas.length; i++) {
-            if (notas[i] >= 7) {
-                System.out.println("\nDisciplina de " + disciplinas[i] + " - Aprovado!");
+            if (media[i] >= 7) {
+                System.out.println(disciplinas[i] + " - Média = " + media[i] + " - Aprovado!");
             } else {
-                System.out.println("\nDisciplina de " + disciplinas[i] + " - Reprovado!");
+                System.out.println(disciplinas[i] + " - Média = " + media[i] + " - Reprovado!");
             }
         }
     }
