@@ -2,13 +2,11 @@ package com.filipe.cursojava.poo.aula31_public_private;
 
 public class Carro {
 
-    //Atributos
-    String marca;
-    String modelo;
-    int numPassageiros;
+    String marca; // default só e visivel dentro do pacote(package)
+    public String modelo; // public é visivel para geral, todos os pacote(packages).
+    private int numPassageiros; // private é somente dentro da própria classe.
     double capCombustivel;
     double consumoCombustivel;
-
 
 
     public Carro(String marca, String modelo, int numPassageiros, double capCombustivel, double consumoCombustivel) {
