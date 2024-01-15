@@ -1,4 +1,4 @@
-package com.filipe.cursojava.poo.aula34_var_met_estatic.labs.ex02;
+package com.filipe.cursojava.poo.aula34_var_met_estatic.labs.ex02_03;
 
 public class MinhaCalculadora {
 
@@ -33,7 +33,6 @@ public class MinhaCalculadora {
     }
 
     static double somar(double num1, double num2) {
-
         resultado = num1 + num2;
 
         sinal = " + ";
@@ -74,8 +73,31 @@ public class MinhaCalculadora {
         return resultado;
     }
 
+    static double fatorial(double num1) {
+        double num2;
+        double i;
+
+        i = num1;
+
+        for (; i > 1; i--) {
+
+            num2 = i - 1;
+
+            num1 = num1 * num2;
+        }
+        resultado = num1;
+        sinal = "! ";
+
+        return resultado;
+    }
+
     static void exibirResultado() {
-        System.out.println(num1 + sinal + num2 + " = " + resultado);
-        System.out.println();
+        if (operador == 6) {
+            System.out.println(num1 + sinal + "= " + resultado);
+            System.out.println();
+        } else {
+            System.out.println(num1 + sinal + num2 + " = " + resultado);
+            System.out.println();
+        }
     }
 }
