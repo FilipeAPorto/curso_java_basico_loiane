@@ -1,19 +1,19 @@
 package com.filipe.cursojava.poo.aula43_object_estudar.labs.ex02;
 
-public abstract class ReceitaFederal {
+public abstract class Contribuinte {
 
-    private String nomeContribuinte;
+    private String nome;
     private double rendaBruta,imposto;
 
-    public ReceitaFederal() {
+    public Contribuinte() {
     }
 
-    public String getNomeContribuinte() {
-        return nomeContribuinte;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeContribuinte(String nomeContribuinte) {
-        this.nomeContribuinte = nomeContribuinte;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public double getRendaBruta() {
@@ -32,10 +32,12 @@ public abstract class ReceitaFederal {
         this.imposto = imposto;
     }
 
+    abstract double calcularImposto();
+
     @Override
     public String toString() {
         return "ReceitaFederal{" +
-                "nomeContribuinte='" + nomeContribuinte + '\'' +
+                "nomeContribuinte='" + nome + '\'' +
                 ", rendaBruta=" + rendaBruta +
                 ", imposto=" + imposto +
                 '}';

@@ -1,10 +1,10 @@
 package com.filipe.cursojava.poo.aula43_object_estudar.labs.ex02;
 
-public class PessoaFisica extends ReceitaFederal {
+public class PessoaFisica extends Contribuinte {
 
 
+    @Override
     double calcularImposto() {
-
         if (getRendaBruta() <= 1400) {
 
             setImposto(0);
@@ -43,7 +43,7 @@ public class PessoaFisica extends ReceitaFederal {
 
     @Override
     public String toString() {
-        return "\n$$$ Receita Federal $$$" + "\nNome do Contribuinte : " + getNomeContribuinte() + "\nRenda Bruta : R$" +
+        return "\n$$$ Receita Federal $$$" + "\nNome do Contribuinte : " + getNome() + "\nRenda Bruta : R$" +
                 getRendaBruta() + "\nImposto sobre renda bruta : R$" + getImposto();
     }
 }

@@ -1,10 +1,8 @@
 package com.filipe.cursojava.poo.aula43_object_estudar.labs.ex02;
 
-import com.filipe.cursojava.one.aula18.Break;
-
 import java.util.Scanner;
 
-public class Teste extends ReceitaFederal {
+public class Teste {
     public static void main(String[] args) {
 
         int operacao1, operacao2, i = 0, j = 0;
@@ -49,7 +47,7 @@ public class Teste extends ReceitaFederal {
 
                         System.out.print("Nome : ");
                         scan.nextLine(); // Tirar "BUG"
-                        fisica[i].setNomeContribuinte(scan.nextLine());
+                        fisica[i].setNome(scan.nextLine());
 
                         System.out.print("Insira o valor da renda BRUTA : ");
                         fisica[i].setRendaBruta(scan.nextDouble());
@@ -64,7 +62,7 @@ public class Teste extends ReceitaFederal {
 
                         System.out.print("Nome : ");
                         scan.nextLine(); // Tirar "BUG"
-                        juridica[j].setNomeContribuinte(scan.nextLine());
+                        juridica[j].setNome(scan.nextLine());
 
                         System.out.print("Insira o valor da renda BRUTA : ");
                         juridica[j].setRendaBruta(scan.nextDouble());
