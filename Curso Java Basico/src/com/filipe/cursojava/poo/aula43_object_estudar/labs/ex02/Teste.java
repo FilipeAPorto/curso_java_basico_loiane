@@ -79,11 +79,17 @@ public class Teste extends ReceitaFederal {
                 sair = false;
 
             } else if (operacao1 == 2) {
-                for (int k = 0; k < i; k++) {
-                    System.out.println(fisica[k]);
-                }
-                for (int k = 0; k < j; k++) {
-                    System.out.println(juridica[k]);
+
+                if (fisica[0] != null || juridica[0] != null) {
+
+                    for (int k = 0; k < i; k++) {
+                        System.out.println(fisica[k]);
+                    }
+                    for (int k = 0; k < j; k++) {
+                        System.out.println(juridica[k]);
+                    }
+                } else {
+                    System.out.println("Nenhum contribuinte cadastrado");
                 }
             } else {
                 sair = true;
