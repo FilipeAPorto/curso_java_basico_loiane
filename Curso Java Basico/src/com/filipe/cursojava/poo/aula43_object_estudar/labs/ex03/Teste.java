@@ -13,9 +13,7 @@ public class Teste {
 
         mamifero[i].setNome("Camelo");
         mamifero[i].setComprimento(150);
-        mamifero[i].setPatas(4);
         mamifero[i].setCor("Amarelo");
-        mamifero[i].setAmbiente("Terra");
         mamifero[i].setVelocidade(2);
 
         i++;
@@ -24,11 +22,8 @@ public class Teste {
 
         peixe[i].setNome("Tubarão");
         peixe[i].setComprimento(300);
-        peixe[i].setPatas(0);
-        peixe[i].setCor("Cinzento");
         peixe[i].setAmbiente("Mar");
         peixe[i].setVelocidade(1.5);
-        peixe[i].setCaracteristica("Barbatanas e cauda");
 
         i++;
 
@@ -36,9 +31,7 @@ public class Teste {
 
         mamifero[i].setNome("Urso-do-Canadá");
         mamifero[i].setComprimento(180);
-        mamifero[i].setPatas(4);
         mamifero[i].setCor("Vermelho");
-        mamifero[i].setAmbiente("Terra");
         mamifero[i].setVelocidade(0.5);
         mamifero[i].setAlimento("Mel");
 

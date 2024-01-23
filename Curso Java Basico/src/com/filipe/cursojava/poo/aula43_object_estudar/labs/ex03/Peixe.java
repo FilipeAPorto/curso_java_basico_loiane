@@ -5,6 +5,9 @@ public class Peixe extends Animal {
     private String caracteristica;
 
     public Peixe() {
+        this.setPatas(0);
+        this.setAmbiente("Cinzenta");
+        this.caracteristica = "Barbatanas e cauda";
     }
 
     public Peixe(String nome, String cor, String ambiente, double velocidade, int comprimento, int patas, String caracteristica) {

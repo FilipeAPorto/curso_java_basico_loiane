@@ -5,6 +5,8 @@ public class Mamifero extends Animal {
     private String alimento;
 
     public Mamifero() {
+        this.setPatas(4);
+        this.setAmbiente("Terra");
     }
 
     public Mamifero(String nome, String cor, String ambiente, double velocidade, int comprimento, int patas, String alimento) {
