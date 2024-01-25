@@ -56,7 +56,7 @@ public class Teste {
 
         cilindro.calcularArea(); // resposta é 172.788 cm²
 
-        cilindro.calcularArea(); // resposta é 3.900.000 cm³
+        cilindro.calcularVolume(); // resposta é 3.900.000 cm³
 
 
         figuraGeometricas[i] = cilindro;

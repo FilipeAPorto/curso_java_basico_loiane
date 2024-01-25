@@ -1,6 +1,6 @@
 package com.filipe.cursojava.poo.aula46_interface_herança.labs.ex01_02_03;
 
-public abstract class Figura2D extends FiguraGeometrica {
+public abstract class Figura2D extends FiguraGeometrica implements DimensaoSuperficial{
 
     private double area;
 

@@ -1,6 +1,6 @@
 package com.filipe.cursojava.poo.aula46_interface_herança.labs.ex01_02_03;
 
-public class Cilindro extends Figura3D implements DimensaoSuperficial, DimensaoVolumetrica {
+public class Cilindro extends Figura3D {
 
     private double raio, altura;
 
@@ -32,7 +32,7 @@ public class Cilindro extends Figura3D implements DimensaoSuperficial, DimensaoV
     }
 
     public String toString() {
-        return "**************\n" + getNome() + " - " + getCor() + "\nRaio = " + raio + "\nAltura = " + altura + "cm²" +
-                "\nArea = " + getArea() + "\nVolume = " +(long) getVolume() + "cm³" + "\n**************\n";
+        return "**************\n" + getNome() + " - " + getCor() + "\nRaio = " + raio + "\nAltura = " + altura +
+                "\nArea = " + getArea() + "cm²" + "\nVolume = " + getVolume() + "cm³" + "\n**************\n";
     }
 }

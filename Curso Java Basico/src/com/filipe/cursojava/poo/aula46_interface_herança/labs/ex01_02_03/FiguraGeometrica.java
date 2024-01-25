@@ -20,6 +20,7 @@ public abstract class FiguraGeometrica {
         this.cor = cor;
     }
 
+
     @Override
     public String toString() {
         return "FiguraGeometrica{" +

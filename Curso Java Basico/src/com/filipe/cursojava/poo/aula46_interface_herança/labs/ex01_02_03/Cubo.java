@@ -1,7 +1,6 @@
 package com.filipe.cursojava.poo.aula46_interface_herança.labs.ex01_02_03;
 
-public class Cubo extends Figura3D implements DimensaoSuperficial, DimensaoVolumetrica {
-
+public class Cubo extends Figura3D {
 
     private double lado;
 

@@ -1,6 +1,6 @@
 package com.filipe.cursojava.poo.aula46_interface_herança.labs.ex01_02_03;
 
-public class Triangulo extends Figura2D implements DimensaoSuperficial {
+public class Triangulo extends Figura2D {
 
     private double base, altura;
 

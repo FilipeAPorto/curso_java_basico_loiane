@@ -1,9 +1,8 @@
 package com.filipe.cursojava.poo.aula46_interface_herança.labs.ex01_02_03;
 
-public class Piramide extends Figura3D implements DimensaoSuperficial, DimensaoVolumetrica {
+public class Piramide extends Figura3D {
 
     // Medidas so da base e altura
-
 
     private double base, altura;
 
